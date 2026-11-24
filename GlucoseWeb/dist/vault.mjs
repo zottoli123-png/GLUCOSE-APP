@@ -33,6 +33,9 @@ export async function seal(envelope, key, journal) {
 }
 export async function unlock(envelope, passphrase) {
     const key = await keyFor(envelope,passphrase);
+    return {key,journal:await decryptJournal(envelope,key)};
+}
+export async function decryptJournal(envelope,key) {
     let journal;
     try {
         const bytes = decode(envelope.sealed);
@@ -40,7 +43,7 @@ export async function unlock(envelope, passphrase) {
         journal = JSON.parse(new TextDecoder().decode(data));
     } catch { throw Error("The passphrase or encrypted backup could not be verified."); }
     if (journal.schema !== 1 || !Array.isArray(journal.entries)) throw Error("This backup requires a compatible app version.");
-    return {key,journal};
+    return journal;
 }
 export async function createVault(passphrase,journal) {
     if (passphrase.length < 14) throw Error("Use a unique passphrase with at least 14 characters.");
@@ -68,7 +71,7 @@ export async function readProfiles(id) {
         request.onerror = () => reject(request.error);
     });
 }
-export async function writeProfile(envelope, revision, remove = false) {
+export async function writeProfile(envelope, revision, remove = false, cloudLink) {
     const conn = await db();
     return new Promise((resolve,reject) => {
         const id = envelope.id.toUpperCase();
@@ -83,7 +86,7 @@ export async function writeProfile(envelope, revision, remove = false) {
                 return;
             }
             if (remove) store.delete(id);
-            else store.put({id,envelope,revision:(revision ?? 0)+1});
+            else store.put({id,envelope,revision:(revision ?? 0)+1,cloudLink:cloudLink ?? request.result?.cloudLink});
         };
         tx.oncomplete = () => resolve((revision ?? 0)+1);
         tx.onabort = () => reject(error || tx.error || Error("Could not save the profile."));

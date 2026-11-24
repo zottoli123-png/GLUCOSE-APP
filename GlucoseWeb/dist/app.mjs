@@ -1,4 +1,5 @@
-import {readProfiles,writeProfile,createVault,unlock,seal} from "./vault.mjs";
+import {route, makeSyncKey, syncRequest, syncAccount, decideSync} from "./sync.mjs";
+import {readProfiles,writeProfile,createVault,unlock,seal,decryptJournal} from "./vault.mjs";
 import {kinds, dates, dose, units, factor, summary, blank, importGlucose, csv} from "./model.mjs";
 
 const main=document.querySelector("#main");
@@ -9,6 +10,7 @@ const tabs=[["History","◷"],["Insights","▤"],["Graph","⌁"],["Medications",
 const typeNames=Object.keys(kinds);
 let session, busy=false, active="History", generation=0, toastTimer;
 let evidence={cards:[]};
+let syncEnabled=false;
 let filter="", windowDays=30, plotKind="Glucose";
 let report={from:dates.local(new Date(Date.now()-29*86400000)).slice(0,10),until:dates.local(new Date()).slice(0,10),types:[],name:false,questions:false,sort:"date"};
 
@@ -58,9 +60,10 @@ async function gate() {
     if(attempt!==generation || session) return;
     main.innerHTML=`<section class="panel gate"><h1>Your health journal</h1><p class="hint">Record readings, organize medications, and prepare for visits. Your journal stays on this device.</p>
         <form id="gate" class="stack">
-        <label>Profile<select name="profile">${profiles.map(p=>opt(p.id,"Profile "+p.id.slice(0,8),null)).join("")}${opt("new","Create a profile",profiles.length?"":"new")}${opt("restore","Restore an encrypted backup",null)}</select></label>
+        <label>Profile<select name="profile">${profiles.map(p=>opt(p.id,"Profile "+p.id.slice(0,8),null)).join("")}${opt("new","Create a profile",profiles.length?"":"new")}${opt("restore","Restore an encrypted backup",null)}${syncEnabled?opt("cloud","Restore from cloud sync",null):""}</select></label>
         <label id="nameField">Profile name<input name="name" maxlength="80"></label>
         <label id="fileField" hidden>Encrypted backup<input type="file" name="backup" accept=".json,application/json"></label>
+        <label id="syncKeyField" hidden>Sync key<input type="password" name="syncKey" autocomplete="off" pattern="[0-9a-f]{64}" maxlength="64"></label>
         <label>Passphrase<input type="password" name="password" required maxlength="512"></label>
         <label id="confirmField">Confirm passphrase<input type="password" name="confirmation" maxlength="512"></label>
         <p id="passHint" class="hint">Use a unique passphrase of at least 14 characters. It also unlocks your backup.</p>
@@ -75,7 +78,9 @@ async function gate() {
         form.elements.name.required=mode==="new";
         form.elements.confirmation.required=mode==="new";
         form.elements.backup.required=mode==="restore";
-        document.querySelector("#openButton").textContent=mode==="new"?"Create profile":mode==="restore"?"Restore backup":"Unlock profile";
+        document.querySelector("#syncKeyField").hidden=mode!=="cloud";
+        form.elements.syncKey.required=mode==="cloud";
+        document.querySelector("#openButton").textContent=mode==="new"?"Create profile":mode==="restore"?"Restore backup":mode==="cloud"?"Restore cloud journal":"Unlock profile";
     };
     form.elements.profile.onchange=update;update();
     form.onsubmit=run(async()=>{
@@ -83,8 +88,18 @@ async function gate() {
         const password=form.elements.password.value;
         const confirmation=form.elements.confirmation.value;
         form.elements.password.value="";form.elements.confirmation.value="";
+        const syncKey=form.elements.syncKey.value;
+        form.elements.syncKey.value="";
         let opened,revision,envelope;
-        if(mode==="new"){
+        if(mode==="cloud"){
+            const remote=await syncRequest("GET",syncKey);
+            envelope=remote.envelope;
+            opened=await unlock(envelope,password);
+            if(await readProfiles(envelope.id.toUpperCase())) throw Error("This profile already exists here. Open it and use Cloud sync in Settings.");
+            const account=await syncAccount(syncKey);
+            if(generation!==attempt || document.hidden) return;
+            revision=await writeProfile(envelope,undefined,false,{account,localRevision:1,cloudRevision:remote.revision});
+        }else if(mode==="new"){
             const name=form.elements.name.value.trim();
             if(!name || confirmation!==password) throw Error("Enter a name and matching passphrases.");
             opened=await createVault(password,blank(name));envelope=opened.envelope;
@@ -352,12 +367,21 @@ function settings(){
     <label>Repeat<select name="repeat"><option value="">Once</option><option>Daily</option><option>Weekly</option><option>Monthly</option></select></label>
     <button>Add reminder</button></form>
     ${j.reminders.map((r,i)=>`<div class="entry"><strong>${html(r.label)}</strong><small>${html(new Date(r.when).toLocaleString())} · ${html(r.repeat||"Once")}</small><div class="row"><button data-calendar="${i}">Calendar file</button><button class="danger" data-reminder="${i}">Delete</button></div></div>`).join("")}</section>
+    ${syncEnabled?`<section class="panel stack"><h2>Cloud sync</h2>
+    <p class="hint">Optional. Save this encrypted profile to the cloud and use the same sync key and journal passphrase on your other devices.</p>
+    <button id="makeSyncKey" type="button">Generate a new sync key</button>
+    <form id="cloudSync" class="stack"><label>Sync key<input name="key" type="password" pattern="[0-9a-f]{64}" maxlength="64" autocomplete="off" spellcheck="false" required></label>
+    <p id="copyKey" class="hint" hidden>Save this key in your password manager before uploading. You’ll need the key and journal passphrase to restore.</p>
+    <div class="row"><button data-action="POST">Create cloud copy</button><button data-action="PUT">Sync now</button><button data-action="DELETE" class="danger">Delete cloud copy</button></div></form>
+    <button id="conflictCopy" type="button" hidden>Download encrypted cloud copy</button>
+    <p id="syncMessage" role="status"></p></section>`:""}
     <section class="panel stack"><h2>Import and backup</h2><button id="backup">Download encrypted backup</button>
     <p class="hint">Backup stores this profile only. Keep a copy outside the browser. Restore is available from the locked screen.</p>
     <form id="import" class="stack"><label>Import glucose CSV<input type="file" name="csv" accept=".csv,text/csv" required></label>
     <small>Columns must be measured_at, glucose, unit, source. Use an ISO date with a time zone.</small>
     <button>Review import</button></form>
     <button class="danger" id="erase">Delete this profile</button></section></div>`;
+    if(syncEnabled) bindCloudSync();
     document.querySelector("#profileSettings").onsubmit=run(async e=>{
         const fields=new FormData(e.currentTarget);const name=String(fields.get("name")).trim();
         if(!name) throw Error("Enter a profile name.");
@@ -422,8 +446,102 @@ function settings(){
         if(await save({...j,entries:j.entries.concat(result.added)})){render();show("Readings imported");}
     });
 }
+function bindCloudSync() {
+    const form=document.querySelector("#cloudSync");
+    const keyInput=form.elements.key;
+    const message=document.querySelector("#syncMessage");
+    const conflictButton=document.querySelector("#conflictCopy");
+    document.querySelector("#makeSyncKey").onclick=()=>{
+        keyInput.type="text";
+        keyInput.value=makeSyncKey();
+        document.querySelector("#copyKey").hidden=false;
+        keyInput.select();
+    };
+    form.onsubmit=run(async event=>{
+        const operation=event.submitter?.dataset.action;
+        if(!operation) return;
+        const current=session;
+        const key=keyInput.value;
+        const profile=current.envelope.id.toUpperCase();
+        keyInput.value="";
+        keyInput.type="password";
+        document.querySelector("#copyKey").hidden=true;
+        conflictButton.hidden=true;
+        conflictButton.onclick=null;
+        message.textContent="";
+        try {
+            const local=await readProfiles(profile);
+            if(local.revision!==current.revision) throw Error("This copy changed in another tab. Reopen the profile first.");
+            const account=await syncAccount(key);
+            if(operation==="POST"){
+                if(!confirm("Upload an encrypted copy of this profile? Save your sync key and passphrase first.")) return;
+                const created=await syncRequest("POST",key,{envelope:local.envelope});
+                if(session!==current) return;
+                const revision=await writeProfile(local.envelope,local.revision,false,
+                    {account,localRevision:local.revision+1,cloudRevision:created.revision});
+                if(session===current) session={...current,revision};
+                message.textContent="Cloud copy created.";
+                return;
+            }
+            const remote=await syncRequest("GET",key);
+            if(session!==current) return;
+            const link=local.cloudLink?.account===account?local.cloudLink:null;
+            const decision=decideSync(local,remote,link);
+            if(decision==="wrong-profile") throw Error("This sync key belongs to a different profile.");
+            const decrypted=await decryptJournal(remote.envelope,current.key);
+            if(session!==current) return;
+            if(operation==="DELETE"){
+                if(!confirm("Delete your cloud copy? Your local profile will stay on this device.")) return;
+                await syncRequest("DELETE",key,undefined,remote.revision);
+                message.textContent="Cloud copy deleted. This device still has its local copy.";
+                return;
+            }
+            if(decision==="conflict"){
+                conflictButton.hidden=false;
+                conflictButton.onclick=()=>download("GlucoseJournal-Cloud-Conflict.json",JSON.stringify(remote.envelope),"application/json");
+                throw Error("This device and the cloud have different histories. Both copies were kept. Download both encrypted backups before choosing which history to use.");
+            }
+            let cloudRevision=remote.revision;
+            let envelope=local.envelope;
+            let journal=current.journal;
+            if(decision==="upload"){
+                const updated=await syncRequest("PUT",key,{envelope,revision:remote.revision});
+                cloudRevision=updated.revision;
+            }else if(decision==="download"){
+                envelope=remote.envelope;
+                journal=profileDefaults(decrypted);
+            }
+            if(session!==current) return;
+            const revision=await writeProfile(envelope,local.revision,false,
+                {account,localRevision:local.revision+1,cloudRevision});
+            if(session!==current) return;
+            session={...current,envelope,journal,revision};
+            render();
+            show("Journal synced");
+        } catch(error) {
+            if(session!==current) return;
+            message.textContent=error.name==="TimeoutError"||error instanceof TypeError
+                ? "Local copy is still on this device. Try sync again when online."
+                : error.message;
+        }
+    });
+}
+async function checkSync() {
+    try{
+        const result=await fetch(route+"?status",{cache:"no-store",credentials:"omit"});
+        if(result.ok) syncEnabled=(await result.json()).enabled===true;
+    }catch{}
+}
 fetch("./evidence.bundle.json",{credentials:"same-origin"}).then(r=>r.json()).then(bundle=>{
     if(bundle.schema===1&&Array.isArray(bundle.cards)){evidence=bundle;if(session&&active==="Insights") render();}
 }).catch(()=>{});
 if("serviceWorker" in navigator) navigator.serviceWorker.register("./sw.js").catch(()=>{show("Offline installation is unavailable in this browser.");});
 gate().catch(error=>show(error.message));
+function refreshSyncCapability(){
+    checkSync().then(()=>{
+        if(!syncEnabled || busy) return;
+        if(!session && !document.activeElement?.closest("#gate")) return gate();
+    }).catch(()=>{});
+}
+window.addEventListener("online",refreshSyncCapability);
+refreshSyncCapability();

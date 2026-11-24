@@ -15,7 +15,7 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 24
-      - run: node --test GlucoseWeb/tests/core.test.mjs
+      - run: node --test GlucoseWeb/tests/*.test.mjs
       - run: python3 GlucoseJournal/Tests/check_storage.py
       - run: python3 -m unittest discover -s glucose-evidence -v
   ios-compile:

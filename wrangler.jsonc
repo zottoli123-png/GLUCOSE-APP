@@ -2,6 +2,11 @@
   "name": "glucose-app",
   "compatibility_date": "2026-11-24",
   "assets": {
-    "directory": "./GlucoseWeb/dist"
-  }
+    "directory": "./GlucoseWeb/dist",
+    "binding": "ASSETS",
+    "run_worker_first": [
+      "/api/journal-sync"
+    ]
+  },
+  "main": "GlucoseWeb/worker/sync.mjs"
 }

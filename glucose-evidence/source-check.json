@@ -1,0 +1,77 @@
+{
+  "checked_on": "2026-11-21",
+  "records": {
+    "28923465": {
+      "notices": [
+        {
+          "pmid": "29061296",
+          "relation": "ErratumIn"
+        }
+      ],
+      "priority_review": true,
+      "publication_types": [
+        "Journal Article",
+        "Multicenter Study",
+        "Randomized Controlled Trial"
+      ],
+      "title": "Continuous glucose monitoring in pregnant women with type 1 diabetes (CONCEPTT): a multicentre international randomised controlled trial.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/28923465/"
+    },
+    "34077499": {
+      "notices": [],
+      "priority_review": false,
+      "publication_types": [
+        "Journal Article",
+        "Multicenter Study",
+        "Randomized Controlled Trial",
+        "Research Support, Non-U.S. Gov't"
+      ],
+      "title": "Effect of Continuous Glucose Monitoring on Glycemic Control in Patients With Type 2 Diabetes Treated With Basal Insulin: A Randomized Clinical Trial.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/34077499/"
+    },
+    "40049630": {
+      "notices": [],
+      "priority_review": false,
+      "publication_types": [
+        "Journal Article",
+        "Meta-Analysis",
+        "Systematic Review"
+      ],
+      "title": "Continuous Glucose Monitoring in Type 1 Diabetes, Type 2 Diabetes, and Diabetes During Pregnancy: A Systematic Review with Meta-Analysis of Randomized Controlled Trials.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/40049630/"
+    },
+    "8366922": {
+      "notices": [],
+      "priority_review": false,
+      "publication_types": [
+        "Clinical Trial",
+        "Journal Article",
+        "Multicenter Study",
+        "Randomized Controlled Trial",
+        "Research Support, U.S. Gov't, P.H.S."
+      ],
+      "title": "The effect of intensive treatment of diabetes on the development and progression of long-term complications in insulin-dependent diabetes mellitus.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/8366922/"
+    },
+    "9742976": {
+      "notices": [
+        {
+          "pmid": null,
+          "relation": "ErratumIn"
+        }
+      ],
+      "priority_review": true,
+      "publication_types": [
+        "Clinical Trial",
+        "Comparative Study",
+        "Journal Article",
+        "Randomized Controlled Trial",
+        "Research Support, Non-U.S. Gov't",
+        "Research Support, U.S. Gov't, P.H.S."
+      ],
+      "title": "Intensive blood-glucose control with sulphonylureas or insulin compared with conventional treatment and risk of complications in patients with type 2 diabetes (UKPDS 33). UK Prospective Diabetes Study (UKPDS) Group.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/9742976/"
+    }
+  },
+  "unresolved_pmids": []
+}

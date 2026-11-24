@@ -1,0 +1,27 @@
+name: Verify Glucose Journal
+on:
+  workflow_dispatch:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  data-tests:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+      - run: node --test GlucoseWeb/tests/core.test.mjs
+      - run: python3 GlucoseJournal/Tests/check_storage.py
+      - run: python3 -m unittest discover -s glucose-evidence -v
+  ios-compile:
+    runs-on: macos-15
+    steps:
+      - uses: actions/checkout@v4
+      - run: |
+          xcodebuild -project GlucoseJournal/GlucoseJournal.xcodeproj -scheme GlucoseJournal \
+            -sdk iphonesimulator -configuration Debug CODE_SIGNING_ALLOWED=NO build

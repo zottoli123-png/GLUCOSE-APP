@@ -1,0 +1,1652 @@
+{
+  "records": {
+    "40296788": {
+      "notices": [],
+      "priority_review": false,
+      "publication_types": [
+        "Journal Article",
+        "Scoping Review"
+      ],
+      "title": "The Effect of Local Use of Insulin on Wound-Ulcer in Diabetic or Non-Diabetic Patients: A Scoping Review.",
+      "topics": [
+        "medication"
+      ],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/40296788/"
+    },
+    "40484629": {
+      "notices": [],
+      "priority_review": false,
+      "publication_types": [
+        "Journal Article",
+        "Randomized Controlled Trial",
+        "Multicenter Study"
+      ],
+      "title": "Implementation of a patient-centred complex intervention to improve Initial Medication Adherence to cardiovascular disease and diabetes treatments in primary care (the IMA-cRCT study): a mixed-methods process evaluation.",
+      "topics": [
+        "medication"
+      ],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/40484629/"
+    },
+    "40626703": {
+      "notices": [],
+      "priority_review": false,
+      "publication_types": [
+        "Journal Article",
+        "Systematic Review",
+        "Meta-Analysis"
+      ],
+      "title": "Is Simplified Meal Announcement an Alternative to Exact Carbohydrate Counting in Patients With Type-1 Diabetes Using an Advanced Hybrid Closed-Loop System? A Systematic Review and Meta-Analysis.",
+      "topics": [
+        "reporting"
+      ],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/40626703/"
+    },
+    "41454522": {
+      "notices": [],
+      "priority_review": false,
+      "publication_types": [
+        "Journal Article",
+        "Systematic Review",
+        "Meta-Analysis",
+        "Comparative Study",
+        "Research Support, Non-U.S. Gov't"
+      ],
+      "title": "Treatment preference for once-weekly versus once-daily DPP-4 inhibitors in patients with type 2 diabetes mellitus: a systematic review and meta-analysis of randomized controlled trials.",
+      "topics": [
+        "medication"
+      ],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/41454522/"
+    },
+    "42033389": {
+      "notices": [],
+      "priority_review": false,
+      "publication_types": [
+        "Journal Article",
+        "Randomized Controlled Trial"
+      ],
+      "title": "The effect of the healthy lifestyle 'empowerment program' on care burden and adherence to health-promoting behaviours on mothers of children with type 1 diabetes.",
+      "topics": [
+        "care-planning"
+      ],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42033389/"
+    },
+    "42095850": {
+      "notices": [],
+      "priority_review": false,
+      "publication_types": [
+        "Journal Article",
+        "Randomized Controlled Trial"
+      ],
+      "title": "Communal coping in type 1 diabetes: Randomized trial of a couple-focused intervention.",
+      "topics": [
+        "access-and-distress"
+      ],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42095850/"
+    },
+    "42100107": {
+      "notices": [],
+      "priority_review": false,
+      "publication_types": [
+        "Journal Article",
+        "Review"
+      ],
+      "title": "Impact of patient care interventions on clinical, humanistic, and treatment outcomes of tuberculosis patients with diabetes mellitus: A systematic review.",
+      "topics": [
+        "medication"
+      ],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42100107/"
+    },
+    "42165353": {
+      "notices": [],
+      "priority_review": false,
+      "publication_types": [
+        "Equivalence Trial",
+        "Journal Article",
+        "Randomized Controlled Trial"
+      ],
+      "title": "Glycemic Concordance of Simplera Sync™ and Instinct™ Sensors in MiniMed™ 780G System Users: A Randomized Crossover Feasibility Study.",
+      "topics": [
+        "reporting"
+      ],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42165353/"
+    },
+    "42248360": {
+      "notices": [],
+      "priority_review": false,
+      "publication_types": [
+        "Journal Article",
+        "Randomized Controlled Trial",
+        "Comparative Study"
+      ],
+      "title": "Dapagliflozin as an Adjunct to Insulin Improves Time-in-Range and Glycemic Variability versus Acarbose in Adults With Type 1 Diabetes: A Randomized Crossover Trial.",
+      "topics": [
+        "reporting"
+      ],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42248360/"
+    },
+    "42262529": {
+      "notices": [],
+      "priority_review": false,
+      "publication_types": [
+        "Journal Article",
+        "Randomized Controlled Trial"
+      ],
+      "title": "The protective effect of high-intensity interval exercise compared with continuous moderate exercise on glycaemic decline is more pronounced in the postabsorptive vs postprandial state in adults with type 1 diabetes: a randomised crossover trial.",
+      "topics": [
+        "medication"
+      ],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42262529/"
+    },
+    "42267693": {
+      "notices": [],
+      "priority_review": false,
+      "publication_types": [
+        "Clinical Trial, Phase II",
+        "Comparative Study",
+        "Journal Article",
+        "Randomized Controlled Trial"
+      ],
+      "title": "Comparing Automated Lyumjev® Delivery with Carbohydrate Counting, Qualitative Meal-Size Estimation, and Fully Closed-Loop in Type 1 Diabetes: A Pilot, Randomized, Crossover Trial.",
+      "topics": [
+        "reporting"
+      ],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42267693/"
+    },
+    "42361212": {
+      "notices": [],
+      "priority_review": false,
+      "publication_types": [
+        "Journal Article",
+        "Pragmatic Clinical Trial",
+        "Randomized Controlled Trial"
+      ],
+      "title": "Phentermine/Topiramate in Obese, Diabetic Uric Acid Stone Formers: An Open-Label Randomized Feasibility Trial.",
+      "topics": [
+        "medication"
+      ],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42361212/"
+    },
+    "42381709": {
+      "notices": [],
+      "priority_review": false,
+      "publication_types": [
+        "Journal Article",
+        "Review"
+      ],
+      "title": "Self-management in Korean immigrants with type 2 diabetes in the United States: a systematic review.",
+      "topics": [
+        "access-and-distress"
+      ],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42381709/"
+    },
+    "42432283": {
+      "notices": [],
+      "priority_review": false,
+      "publication_types": [
+        "Journal Article",
+        "Randomized Controlled Trial"
+      ],
+      "title": "Premeal insulin administration lowers postprandial blood glucose and increases myocardial microvascular blood flow in people with type 1 diabetes: a randomised, crossover clinical trial.",
+      "topics": [
+        "medication"
+      ],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42432283/"
+    },
+    "42433114": {
+      "notices": [],
+      "priority_review": false,
+      "publication_types": [
+        "Journal Article",
+        "Systematic Review"
+      ],
+      "title": "How Families Influence Self-Management Among the Role of Family to Patients With Type 2 Diabetes? A Systematic Review and Meta-Synthesis.",
+      "topics": [
+        "care-planning"
+      ],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42433114/"
+    },
+    "42443590": {
+      "notices": [],
+      "priority_review": false,
+      "publication_types": [
+        "Journal Article",
+        "Systematic Review",
+        "Network Meta-Analysis",
+        "Comparative Study"
+      ],
+      "title": "Comparative Efficacy of Insulin Delivery Modalities on Glycaemic Control in Adults With Type 2 Diabetes: A Systematic Review and Network Meta-Analysis.",
+      "topics": [
+        "reporting"
+      ],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42443590/"
+    },
+    "42444066": {
+      "notices": [],
+      "priority_review": false,
+      "publication_types": [
+        "Journal Article",
+        "Randomized Controlled Trial, Veterinary"
+      ],
+      "title": "Comparing the efficacy of transmucosal and subcutaneous glucagon administration in response to insulin-induced hypoglycemia in healthy cats.",
+      "topics": [
+        "medication"
+      ],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42444066/"
+    },
+    "42448044": {
+      "notices": [],
+      "priority_review": false,
+      "publication_types": [
+        "Journal Article",
+        "Systematic Review",
+        "Meta-Analysis"
+      ],
+      "title": "Adherence to diabetes self-care behaviors among patients with diabetes mellitus in Pakistan: a systematic review and meta-analysis.",
+      "topics": [
+        "medication"
+      ],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42448044/"
+    },
+    "42448520": {
+      "notices": [],
+      "priority_review": false,
+      "publication_types": [
+        "Journal Article",
+        "Systematic Review"
+      ],
+      "title": "Digital health interventions for diabetes management in the eastern mediterranean region: A systematic review of types and effectiveness.",
+      "topics": [
+        "medication",
+        "digital-self-management"
+      ],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42448520/"
+    },
+    "42498081": {
+      "notices": [],
+      "priority_review": false,
+      "publication_types": [
+        "Journal Article",
+        "Clinical Trial Protocol"
+      ],
+      "title": "Continuous glucose monitoring for high-risk type 2 diabetes in the hospital: the Cyber GEMS randomized controlled trial protocol.",
+      "topics": [
+        "digital-self-management"
+      ],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42498081/"
+    },
+    "42503366": {
+      "notices": [],
+      "priority_review": false,
+      "publication_types": [
+        "Journal Article",
+        "Randomized Controlled Trial"
+      ],
+      "title": "A self-determination theory-based cognitive prosthetic to improve medication adherence in African American older adults with diabetes.",
+      "topics": [
+        "medication"
+      ],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42503366/"
+    },
+    "42531669": {
+      "notices": [],
+      "priority_review": false,
+      "publication_types": [
+        "Journal Article",
+        "Scoping Review"
+      ],
+      "title": "Promoting patient empowerment in chronic care: A scoping review of key facilitating factors.",
+      "topics": [
+        "digital-self-management"
+      ],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42531669/"
+    },
+    "42543085": {
+      "notices": [],
+      "priority_review": false,
+      "publication_types": [
+        "Journal Article",
+        "Multicenter Study",
+        "Randomized Controlled Trial"
+      ],
+      "title": "Effect of a pharmacist-led mHealth app on adherence, quality of life, and glycaemic control in diabetes: A multicentre RCT.",
+      "topics": [
+        "medication"
+      ],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42543085/"
+    },
+    "42555457": {
+      "notices": [],
+      "priority_review": false,
+      "publication_types": [
+        "Journal Article",
+        "Review"
+      ],
+      "title": "Effectiveness of WeChat-based interventions for glycemic control in patients with diabetes mellitus: A systematic review and meta-analysis.",
+      "topics": [
+        "digital-self-management"
+      ],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42555457/"
+    },
+    "42575850": {
+      "notices": [],
+      "priority_review": false,
+      "publication_types": [
+        "Journal Article",
+        "Randomized Controlled Trial"
+      ],
+      "title": "Feasibility and Effects of a Produce Prescription Program (PRx) in People With Type 2 Diabetes and Low Socioeconomic Status: A Randomised Controlled Pilot Trial.",
+      "topics": [
+        "access-and-distress"
+      ],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42575850/"
+    },
+    "42586910": {
+      "notices": [],
+      "priority_review": false,
+      "publication_types": [
+        "Journal Article",
+        "Multicenter Study",
+        "Randomized Controlled Trial",
+        "Research Support, Non-U.S. Gov't"
+      ],
+      "title": "Mobile health apps improve Health-Related Quality of Life in Type 2 Diabetes Mellitus by enhancing medication adherence: A multicentre randomised controlled trial with mediation analysis.",
+      "topics": [
+        "medication",
+        "digital-self-management"
+      ],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42586910/"
+    },
+    "42587354": {
+      "notices": [],
+      "priority_review": false,
+      "publication_types": [
+        "Journal Article",
+        "Multicenter Study",
+        "Randomized Controlled Trial"
+      ],
+      "title": "Community-Based Personalised Lifestyle Intervention Guided by Intermittent Continuous Glucose Monitoring in Adults With Type 2 Diabetes: A Multicentre Randomised Controlled Trial.",
+      "topics": [
+        "monitoring"
+      ],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42587354/"
+    },
+    "42594248": {
+      "notices": [],
+      "priority_review": false,
+      "publication_types": [
+        "Journal Article",
+        "Randomized Controlled Trial"
+      ],
+      "title": "Housing Instability Associated With Cost-Related Nonadherence and Financial Toxicity in People With Uncontrolled Diabetes.",
+      "topics": [
+        "access-and-distress"
+      ],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42594248/"
+    },
+    "42600906": {
+      "notices": [],
+      "priority_review": false,
+      "publication_types": [
+        "Journal Article",
+        "Clinical Trial Protocol"
+      ],
+      "title": "Cleaner air for lower cardiometabolic risk: Protocol for a double-blind, randomized, sham-controlled trial of HEPA filtration in adults with prediabetes.",
+      "topics": [
+        "monitoring"
+      ],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42600906/"
+    },
+    "42608227": {
+      "notices": [],
+      "priority_review": false,
+      "publication_types": [
+        "Systematic Review",
+        "Journal Article",
+        "Meta-Analysis"
+      ],
+      "title": "The effectiveness of digital health interventions for type 2 diabetes in underserved populations: A systematic review and meta-analysis.",
+      "topics": [
+        "digital-self-management",
+        "access-and-distress"
+      ],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42608227/"
+    },
+    "42608327": {
+      "notices": [],
+      "priority_review": false,
+      "publication_types": [
+        "Journal Article",
+        "Randomized Controlled Trial"
+      ],
+      "title": "Vegetable-First Meal Sequence Suppresses Postprandial Glycaemic Excursions and Variability in Young Women With High-Risk Phenotype for Early-Onset Type 2 Diabetes: A 4-Arm Randomized Crossover Trial With Continuous Glucose Monitoring.",
+      "topics": [
+        "monitoring",
+        "reporting"
+      ],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42608327/"
+    },
+    "42611166": {
+      "notices": [],
+      "priority_review": false,
+      "publication_types": [
+        "Journal Article",
+        "Randomized Controlled Trial"
+      ],
+      "title": "Recruitment and Retention of Racially Minoritized Families in a Pediatric Behavioral Diabetes Research Study.",
+      "topics": [
+        "care-planning"
+      ],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42611166/"
+    },
+    "42614156": {
+      "notices": [],
+      "priority_review": false,
+      "publication_types": [
+        "Journal Article"
+      ],
+      "title": "Association between a clinical pharmacist-led multimodal remote medication intervention and individualized treatment outcomes in patients with type 2 diabetes mellitus.",
+      "topics": [
+        "medication"
+      ],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42614156/"
+    },
+    "42618287": {
+      "notices": [],
+      "priority_review": false,
+      "publication_types": [
+        "Journal Article",
+        "Observational Study",
+        "Multicenter Study"
+      ],
+      "title": "Observational study of the relationship between the use of real-time continuous glucose monitoring and glycemic control in patients with diabetes in Japan: the REALJ study.",
+      "topics": [
+        "monitoring"
+      ],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42618287/"
+    },
+    "42618811": {
+      "notices": [],
+      "priority_review": false,
+      "publication_types": [
+        "Clinical Trial, Phase II",
+        "Journal Article",
+        "Randomized Controlled Trial"
+      ],
+      "title": "Dulaglutide vs insulin in adolescents with thalassaemia-induced diabetes: effect on metabolism and atherogenesis (DIADEMA).",
+      "topics": [
+        "monitoring",
+        "reporting"
+      ],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42618811/"
+    },
+    "42619607": {
+      "notices": [],
+      "priority_review": false,
+      "publication_types": [
+        "Journal Article",
+        "Systematic Review"
+      ],
+      "title": "Socioeconomic determinants of recurrent DKA in US children.",
+      "topics": [
+        "access-and-distress"
+      ],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42619607/"
+    },
+    "42623941": {
+      "notices": [],
+      "priority_review": false,
+      "publication_types": [
+        "Journal Article",
+        "Systematic Review"
+      ],
+      "title": "Effectiveness of digital and telemedicine interventions for gestational diabetes mellitus: An umbrella review of systematic reviews and meta-analyses.",
+      "topics": [
+        "digital-self-management"
+      ],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42623941/"
+    },
+    "42654433": {
+      "notices": [],
+      "priority_review": false,
+      "publication_types": [
+        "Journal Article",
+        "Systematic Review"
+      ],
+      "title": "Is There a Better Day of the Week to Administer Semaglutide or Tirzepatide? A Systematic Literature Review.",
+      "topics": [
+        "medication"
+      ],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42654433/"
+    },
+    "42658823": {
+      "notices": [
+        {
+          "pmid": "40997074",
+          "relation": "ExpressionOfConcernFor"
+        }
+      ],
+      "priority_review": true,
+      "publication_types": [
+        "Journal Article",
+        "Expression of Concern"
+      ],
+      "title": "Expression of Concern: Determinants of medication adherence among older adults with type 2 diabetes using the health action process approach: A cross-sectional study.",
+      "topics": [
+        "medication"
+      ],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42658823/"
+    },
+    "42670748": {
+      "notices": [],
+      "priority_review": false,
+      "publication_types": [
+        "Journal Article",
+        "Systematic Review"
+      ],
+      "title": "Dyadic Interventions on Diabetes Self-Management and Glycemic Control for Adults With Type 2 Diabetes: A Systematic Review.",
+      "topics": [
+        "care-planning"
+      ],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42670748/"
+    },
+    "42671256": {
+      "notices": [],
+      "priority_review": false,
+      "publication_types": [
+        "Journal Article",
+        "Randomized Controlled Trial"
+      ],
+      "title": "Parallel reductions in diabetes distress through distinct pathways: a mixed-methods study of two interventions in adolescents with type 1 diabetes.",
+      "topics": [
+        "access-and-distress"
+      ],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42671256/"
+    },
+    "42675550": {
+      "notices": [],
+      "priority_review": false,
+      "publication_types": [
+        "Journal Article",
+        "Randomized Controlled Trial"
+      ],
+      "title": "Glycaemic Changes After Semaglutide Discontinuation in Adults With Type 1 Diabetes Using Automated Insulin Delivery: Analysis of the ADJUST-T1D Extension Study.",
+      "topics": [
+        "monitoring",
+        "reporting"
+      ],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42675550/"
+    },
+    "42679861": {
+      "notices": [],
+      "priority_review": false,
+      "publication_types": [
+        "Journal Article",
+        "Randomized Controlled Trial",
+        "Multicenter Study",
+        "Clinical Trial, Phase IV"
+      ],
+      "title": "Postprandial ultra-fast insulin versus mealtime fast-acting insulin in adults with cystic fibrosis-related diabetes: A randomized multicentre crossover trial.",
+      "topics": [
+        "monitoring",
+        "medication",
+        "reporting"
+      ],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42679861/"
+    },
+    "42687632": {
+      "notices": [],
+      "priority_review": false,
+      "publication_types": [
+        "Journal Article",
+        "Review"
+      ],
+      "title": "Optimizing Continuous Glucose Monitoring for Older Adults with Diabetes: From Clinical Evidence to a Practical Implementation Pathway.",
+      "topics": [
+        "care-planning"
+      ],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42687632/"
+    },
+    "42688211": {
+      "notices": [],
+      "priority_review": false,
+      "publication_types": [
+        "Journal Article"
+      ],
+      "title": "A shared decision-making approach to individualized exercise management enhances glycemic control, self-care behaviors, and quality of life in type 2 diabetes: a retrospective cohort study.",
+      "topics": [
+        "medication"
+      ],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42688211/"
+    },
+    "42706511": {
+      "notices": [],
+      "priority_review": false,
+      "publication_types": [
+        "Systematic Review",
+        "Journal Article"
+      ],
+      "title": "Epidemiology, risk determinants, and research trends of dementia in Saudi Arabia: A systematic review.",
+      "topics": [
+        "care-planning"
+      ],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42706511/"
+    },
+    "42709002": {
+      "notices": [],
+      "priority_review": false,
+      "publication_types": [
+        "Journal Article",
+        "Consensus Statement",
+        "Review",
+        "Practice Guideline"
+      ],
+      "title": "American Association of Clinical Endocrinology Consensus Statement: Use of Diabetes Technology for Management of Adults with Diabetes.",
+      "topics": [
+        "monitoring"
+      ],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42709002/"
+    },
+    "42717529": {
+      "notices": [],
+      "priority_review": false,
+      "publication_types": [
+        "Systematic Review",
+        "Journal Article"
+      ],
+      "title": "Antenatal Corticosteroids in Gestational Diabetes: A Systematic Review of Glycemic Response and Management Strategies.",
+      "topics": [
+        "reporting"
+      ],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42717529/"
+    },
+    "42720752": {
+      "notices": [],
+      "priority_review": false,
+      "publication_types": [
+        "Clinical Trial, Phase III",
+        "Journal Article",
+        "Multicenter Study",
+        "Randomized Controlled Trial"
+      ],
+      "title": "Preserving beta cell function in children and adolescents with newly diagnosed stage 3 type 1 diabetes: per-protocol population analysis from the PROTECT randomised trial.",
+      "topics": [
+        "reporting"
+      ],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42720752/"
+    },
+    "42723273": {
+      "notices": [],
+      "priority_review": false,
+      "publication_types": [
+        "Systematic Review",
+        "Journal Article"
+      ],
+      "title": "Efficacy and Safety of Glucagon-Like Peptide-1 Receptor Agonists as Adjuncts to Insulin Therapy in Type 1 Diabetes Mellitus: An Overlap-Informed Umbrella Review.",
+      "topics": [
+        "reporting"
+      ],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42723273/"
+    },
+    "42726276": {
+      "notices": [],
+      "priority_review": false,
+      "publication_types": [
+        "Journal Article",
+        "Systematic Review",
+        "Meta-Analysis"
+      ],
+      "title": "Interventions to reduce diabetes-related distress among adults with type 1 or type 2 diabetes: a systematic review and meta-analysis of randomised controlled trials.",
+      "topics": [
+        "monitoring",
+        "access-and-distress"
+      ],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42726276/"
+    },
+    "42731839": {
+      "notices": [],
+      "priority_review": false,
+      "publication_types": [
+        "Journal Article"
+      ],
+      "title": "Medium-term to long-term effect of digital self-management interventions for type 2 diabetes mellitus: protocol of a systematic review.",
+      "topics": [
+        "care-planning"
+      ],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42731839/"
+    },
+    "42744915": {
+      "notices": [],
+      "priority_review": false,
+      "publication_types": [
+        "Journal Article",
+        "Practice Guideline"
+      ],
+      "title": "2026 EASD evidence-based clinical practice guideline for assessing and managing diabetes distress among adults with type 1 diabetes or type 2 diabetes.",
+      "topics": [
+        "monitoring",
+        "access-and-distress"
+      ],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42744915/"
+    },
+    "42745276": {
+      "notices": [],
+      "priority_review": false,
+      "publication_types": [
+        "Journal Article"
+      ],
+      "title": "Nurse-led behavioural support for lifestyle self-management in adults with type 2 diabetes mellitus: an integrative review.",
+      "topics": [
+        "medication"
+      ],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42745276/"
+    },
+    "42747941": {
+      "notices": [],
+      "priority_review": false,
+      "publication_types": [
+        "Journal Article",
+        "Multicenter Study",
+        "Randomized Controlled Trial"
+      ],
+      "title": "From Alert to Action: Electronic Practice Advisory Improves DSMES Referrals Over 18 Months.",
+      "topics": [
+        "care-planning"
+      ],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42747941/"
+    },
+    "42755121": {
+      "notices": [],
+      "priority_review": false,
+      "publication_types": [
+        "Journal Article",
+        "Randomized Controlled Trial",
+        "Multicenter Study"
+      ],
+      "title": "Metabolic and Psychological Effects of Mylife CamAPS FX Hybrid Closed-Loop Therapy in Adults With Type 1 Diabetes, Markedly Elevated HbA1c, and Psychological Vulnerability: The Hi-Loop Randomised Clinical Trial.",
+      "topics": [
+        "access-and-distress",
+        "reporting"
+      ],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42755121/"
+    },
+    "42755138": {
+      "notices": [],
+      "priority_review": false,
+      "publication_types": [
+        "Journal Article"
+      ],
+      "title": "Cost-Effectiveness of a Culturally Adapted Diabetes Self-Management Education Program for Marshallese Adults With Type 2 Diabetes-a State-Transition Markov Analysis.",
+      "topics": [
+        "care-planning"
+      ],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42755138/"
+    },
+    "42771802": {
+      "notices": [],
+      "priority_review": false,
+      "publication_types": [
+        "Journal Article",
+        "Systematic Review"
+      ],
+      "title": "Stakeholder Perspectives on the Integration of AI in Diabetes Care: Systematic Review of Qualitative Studies.",
+      "topics": [
+        "care-planning"
+      ],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42771802/"
+    },
+    "42784225": {
+      "notices": [],
+      "priority_review": false,
+      "publication_types": [
+        "Journal Article",
+        "Review"
+      ],
+      "title": "A Systematic Review of Pharmacists Using Motivational Interviewing and Patient Outcomes.",
+      "topics": [
+        "medication"
+      ],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42784225/"
+    },
+    "42793617": {
+      "notices": [],
+      "priority_review": false,
+      "publication_types": [
+        "Journal Article"
+      ],
+      "title": "Effect of Nursing Intervention Supported by Mobile Health Applications on Asthma Control, Maternal and Neonatal Outcomes Among Pregnant Women with Asthma.",
+      "topics": [
+        "medication"
+      ],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42793617/"
+    },
+    "42798078": {
+      "notices": [],
+      "priority_review": false,
+      "publication_types": [
+        "Journal Article"
+      ],
+      "title": "Health literacy and the health belief model in type 2 diabetes mellitus: A bibliometric analysis of global research trends (1982-2026).",
+      "topics": [
+        "care-planning"
+      ],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42798078/"
+    },
+    "42802848": {
+      "notices": [],
+      "priority_review": false,
+      "publication_types": [
+        "Journal Article"
+      ],
+      "title": "Association of a Health Belief Model-Based Digital Health Intervention with Glycolipid Metabolism and Health Behaviors in Older Adults with Type 2 Diabetes: A Quasi-Experimental Before-After Study.",
+      "topics": [
+        "medication"
+      ],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42802848/"
+    },
+    "42814156": {
+      "notices": [],
+      "priority_review": false,
+      "publication_types": [
+        "Systematic Review",
+        "Journal Article"
+      ],
+      "title": "Supporting Caregivers Behind Youth with T1D: A Systematic Review of Psychosocial Interventions and Youth Glycemic Outcomes.",
+      "topics": [
+        "care-planning"
+      ],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42814156/"
+    },
+    "42821868": {
+      "notices": [],
+      "priority_review": false,
+      "publication_types": [
+        "Journal Article",
+        "Systematic Review"
+      ],
+      "title": "Reporting Gaps in mHealth Intervention Studies for Adults With Diabetes: Systematic Review.",
+      "topics": [
+        "digital-self-management",
+        "care-planning"
+      ],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42821868/"
+    },
+    "42834283": {
+      "notices": [
+        {
+          "pmid": "41728309",
+          "relation": "UpdateOf"
+        },
+        {
+          "pmid": "41728336",
+          "relation": "UpdateOf"
+        },
+        {
+          "pmid": "42907696",
+          "relation": "ErratumIn"
+        }
+      ],
+      "priority_review": true,
+      "publication_types": [
+        "Journal Article"
+      ],
+      "title": "Videographic Analysis of an Intervention to Improve Patient-Centered Care for People Living with Type 2 Diabetes: The QBSAFE Randomized Trial.",
+      "topics": [
+        "access-and-distress"
+      ],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42834283/"
+    },
+    "42837539": {
+      "notices": [],
+      "priority_review": false,
+      "publication_types": [
+        "Journal Article"
+      ],
+      "title": "An eHealth-Delivered Total Diet Replacement Intervention for Type 2 Diabetes Remission: Single-Arm Pilot Study.",
+      "topics": [
+        "digital-self-management"
+      ],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42837539/"
+    },
+    "42842171": {
+      "notices": [],
+      "priority_review": false,
+      "publication_types": [
+        "Journal Article",
+        "Systematic Review"
+      ],
+      "title": "Disparities in GLP-1RA and SGLT2i Uptake: a Systematic Review and an Equity-First Framework for Cardiovascular-Kidney-Metabolic Care.",
+      "topics": [
+        "access-and-distress"
+      ],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42842171/"
+    },
+    "42853347": {
+      "notices": [],
+      "priority_review": false,
+      "publication_types": [
+        "Journal Article"
+      ],
+      "title": "Impact of Ascorbic Acid and Exercise on Accuracy of a Glucose Monitoring System with GDH-FAD Technology in Adult Patients with Type 1 Diabetes Mellitus: A Double-Blinded, Randomized Trial.",
+      "topics": [
+        "monitoring"
+      ],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42853347/"
+    },
+    "42859396": {
+      "notices": [],
+      "priority_review": false,
+      "publication_types": [
+        "Letter"
+      ],
+      "title": "Rapid decline in smart insulin pen decision-support use in youth with type 1 diabetes: a randomized crossover pilot trial.",
+      "topics": [
+        "access-and-distress"
+      ],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42859396/"
+    },
+    "42879781": {
+      "notices": [],
+      "priority_review": false,
+      "publication_types": [
+        "Systematic Review",
+        "Journal Article"
+      ],
+      "title": "AI-Driven Lifestyle Interventions for Reducing Diabetes Risk: Systematic Review.",
+      "topics": [
+        "digital-self-management"
+      ],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42879781/"
+    },
+    "42882222": {
+      "notices": [
+        {
+          "pmid": "41095796",
+          "relation": "ErratumFor"
+        }
+      ],
+      "priority_review": true,
+      "publication_types": [
+        "Published Erratum"
+      ],
+      "title": "Correction: Albadrani et al. Medication Adherence Among Diabetic Patients in Madinah, Saudi Arabia: Interplay of Cultural Beliefs, Socioeconomic Status, and Clinical Determinants. J. Clin. Med. 2025, 14, 6717.",
+      "topics": [
+        "medication"
+      ],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42882222/"
+    },
+    "42886602": {
+      "notices": [],
+      "priority_review": false,
+      "publication_types": [
+        "Journal Article",
+        "Review"
+      ],
+      "title": "Telehealth and Digital Interventions for Type 2 Diabetes and Hypertension in Latin America and the Caribbean: A Systematic Review and Meta-Analysis.",
+      "topics": [
+        "digital-self-management"
+      ],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42886602/"
+    },
+    "42895748": {
+      "notices": [],
+      "priority_review": false,
+      "publication_types": [
+        "Journal Article",
+        "Randomized Controlled Trial"
+      ],
+      "title": "A Conversation Tool to Enhance Care for People With Type 2 Diabetes: The QBSafe Cluster Randomized Clinical Trial.",
+      "topics": [
+        "access-and-distress"
+      ],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42895748/"
+    },
+    "42900651": {
+      "notices": [],
+      "priority_review": false,
+      "publication_types": [
+        "Journal Article",
+        "Review"
+      ],
+      "title": "Type 1 Diabetes in the Youngest: From Distinct Needs to New Frontiers in Care.",
+      "topics": [
+        "care-planning"
+      ],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42900651/"
+    },
+    "42901039": {
+      "notices": [],
+      "priority_review": false,
+      "publication_types": [
+        "Journal Article",
+        "Multicenter Study",
+        "Randomized Controlled Trial"
+      ],
+      "title": "Association of continuous glucose monitoring metrics with cardiovascular and kidney outcomes in type 2 diabetes: Data from the GRADE-CGM substudy.",
+      "topics": [
+        "monitoring",
+        "reporting"
+      ],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42901039/"
+    },
+    "42901530": {
+      "notices": [],
+      "priority_review": false,
+      "publication_types": [
+        "Journal Article"
+      ],
+      "title": "Efficacy and Feasibility of Just-in-Time Nudging in Reducing Evening Snacking Measured by Continuous Glucose Monitoring in Adults With Type 2 Diabetes: A Micro-Randomized Study.",
+      "topics": [
+        "digital-self-management"
+      ],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42901530/"
+    },
+    "42905688": {
+      "notices": [],
+      "priority_review": false,
+      "publication_types": [
+        "Journal Article",
+        "Review"
+      ],
+      "title": "Obesity in Children Aged 2 to 12 Years: A Review.",
+      "topics": [
+        "care-planning"
+      ],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42905688/"
+    },
+    "42921223": {
+      "notices": [],
+      "priority_review": false,
+      "publication_types": [
+        "Journal Article"
+      ],
+      "title": "Design of a digital health intervention to promote prediabetes health literacy and behavior change among young adults.",
+      "topics": [
+        "digital-self-management",
+        "access-and-distress"
+      ],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42921223/"
+    },
+    "42924921": {
+      "notices": [],
+      "priority_review": false,
+      "publication_types": [
+        "Journal Article",
+        "Review"
+      ],
+      "title": "Artificial intelligence in modern medicine: a comprehensive review of technologies, applications, and future directions.",
+      "topics": [
+        "access-and-distress"
+      ],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42924921/"
+    },
+    "42927777": {
+      "notices": [],
+      "priority_review": false,
+      "publication_types": [
+        "Journal Article"
+      ],
+      "title": "Randomized controlled trial evaluating a mHealth intervention to optimize self- and social-regulation for emerging adults with type 1 diabetes (FAMS-T1D): protocol and lessons learned.",
+      "topics": [
+        "access-and-distress",
+        "reporting"
+      ],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42927777/"
+    },
+    "42947952": {
+      "notices": [],
+      "priority_review": false,
+      "publication_types": [
+        "Journal Article"
+      ],
+      "title": "A mobile health-assisted cardiovascular follow-up after pregnancy complications (MumCare): protocol for a randomized controlled trial.",
+      "topics": [
+        "digital-self-management"
+      ],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42947952/"
+    },
+    "42951134": {
+      "notices": [],
+      "priority_review": false,
+      "publication_types": [
+        "Journal Article"
+      ],
+      "title": "Postpartum glycemic trends among people with gestational diabetes using continuous glucose monitoring.",
+      "topics": [
+        "reporting"
+      ],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42951134/"
+    },
+    "42951325": {
+      "notices": [],
+      "priority_review": false,
+      "publication_types": [
+        "Journal Article"
+      ],
+      "title": "Digital health interventions and their effects on health beliefs and self-efficacy in adults with chronic conditions: a systematic review.",
+      "topics": [
+        "digital-self-management"
+      ],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42951325/"
+    },
+    "42952181": {
+      "notices": [],
+      "priority_review": false,
+      "publication_types": [
+        "Journal Article",
+        "Randomized Controlled Trial"
+      ],
+      "title": "Sustained Psychosocial Benefits of Telehealth Occupational Therapy for Young Adults With Type 1 Diabetes: Long-Term Follow-Up of the Resilient, Empowered, Active Living-Telehealth (REAL-T) Randomized Controlled Trial.",
+      "topics": [
+        "access-and-distress"
+      ],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42952181/"
+    },
+    "42955196": {
+      "notices": [],
+      "priority_review": false,
+      "publication_types": [
+        "Journal Article",
+        "Review"
+      ],
+      "title": "Automated insulin delivery in older adults with type 1 diabetes: evidence, limitations, and clinical perspectives.",
+      "topics": [
+        "care-planning",
+        "reporting"
+      ],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42955196/"
+    },
+    "42957555": {
+      "notices": [],
+      "priority_review": false,
+      "publication_types": [
+        "Journal Article"
+      ],
+      "title": "Outcomes of a randomized-controlled digital weight management program over 2.5-years.",
+      "topics": [
+        "digital-self-management"
+      ],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42957555/"
+    },
+    "42961706": {
+      "notices": [],
+      "priority_review": false,
+      "publication_types": [
+        "Journal Article",
+        "Systematic Review"
+      ],
+      "title": "Rethinking glycemic monitoring: a HTA of glycated albumin for type 2 diabetes with stage IV-V CKD.",
+      "topics": [
+        "care-planning"
+      ],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42961706/"
+    },
+    "42963492": {
+      "notices": [],
+      "priority_review": false,
+      "publication_types": [
+        "Journal Article",
+        "Review"
+      ],
+      "title": "Cultural adaptation of nutritional recommendations in the comprehensive care of adults with type 2 diabetes: An updated transcultural diabetes nutrition algorithm (tDNA) framework.",
+      "topics": [
+        "reporting"
+      ],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42963492/"
+    },
+    "42967509": {
+      "notices": [],
+      "priority_review": false,
+      "publication_types": [
+        "Journal Article"
+      ],
+      "title": "Effectiveness of a mindfulness-based cognitive behavioral program on glycemic control and quality of life among adults with diabetes in Damascus, Syria: a randomized controlled trial.",
+      "topics": [
+        "access-and-distress"
+      ],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42967509/"
+    },
+    "42969089": {
+      "notices": [],
+      "priority_review": false,
+      "publication_types": [
+        "Journal Article",
+        "Systematic Review"
+      ],
+      "title": "Exploring Factors Impacting the Self-Management of Type 2 Diabetes in Older Black African and Afro-Caribbean People (BAACP): A Qualitative Evidence Synthesis.",
+      "topics": [
+        "access-and-distress"
+      ],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42969089/"
+    },
+    "42970212": {
+      "notices": [],
+      "priority_review": false,
+      "publication_types": [
+        "Journal Article"
+      ],
+      "title": "Reducing the Burden of Hypoglycemia in Type 1 Diabetes: The Impact of FLO23011 on Patient-Reported Outcomes and Glycemic Correlates of Treatment Response.",
+      "topics": [
+        "monitoring",
+        "reporting"
+      ],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42970212/"
+    },
+    "42971815": {
+      "notices": [],
+      "priority_review": false,
+      "publication_types": [
+        "English Abstract",
+        "Journal Article",
+        "Practice Guideline"
+      ],
+      "title": "[Continuous glucose monitoring in diabetes: Clinical practice guidelines for primary care from SEMERGEN, RedGDPS, semFYC, SEMG and FAECAP].",
+      "topics": [
+        "monitoring"
+      ],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42971815/"
+    },
+    "42977540": {
+      "notices": [],
+      "priority_review": false,
+      "publication_types": [
+        "Journal Article"
+      ],
+      "title": "Closed-Loop Insulin Delivery in Inpatient Care: A Systematic Review and Meta-Analysis of Clinical and Implementation Outcomes.",
+      "topics": [
+        "reporting"
+      ],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42977540/"
+    },
+    "42978091": {
+      "notices": [],
+      "priority_review": false,
+      "publication_types": [
+        "Journal Article"
+      ],
+      "title": "Artificial Intelligence for Cardiovascular Health Behavior Change: A Narrative Review of Patient-Facing Tools.",
+      "topics": [
+        "digital-self-management",
+        "access-and-distress"
+      ],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42978091/"
+    },
+    "42980924": {
+      "notices": [],
+      "priority_review": false,
+      "publication_types": [
+        "Journal Article"
+      ],
+      "title": "Structured Online Diabetes Self-Management Education and Support for Adults with Type 1 Diabetes and Suboptimal Glycemic Control: The OPTIM@TE Pilot Randomized Controlled Trial.",
+      "topics": [
+        "monitoring",
+        "digital-self-management",
+        "care-planning"
+      ],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42980924/"
+    },
+    "42985212": {
+      "notices": [],
+      "priority_review": false,
+      "publication_types": [
+        "Journal Article"
+      ],
+      "title": "AI-Delivered Short Video Cognitive Behavioral Therapy for Type 2 Diabetes Mellitus - A Randomized Controlled Trial Protocol.",
+      "topics": [
+        "digital-self-management"
+      ],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42985212/"
+    },
+    "42988227": {
+      "notices": [],
+      "priority_review": false,
+      "publication_types": [
+        "Journal Article"
+      ],
+      "title": "Research and Clinical Considerations for Continuous Glucose Monitoring in Healthy Populations.",
+      "topics": [
+        "monitoring"
+      ],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42988227/"
+    },
+    "42988691": {
+      "notices": [],
+      "priority_review": false,
+      "publication_types": [
+        "Journal Article"
+      ],
+      "title": "Analysis of the situation of nurses in diabetes care and therapeutic education in hospital and primary care settings in Spain: a cross-sectional and comparative study (ASENET-es).",
+      "topics": [
+        "care-planning"
+      ],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42988691/"
+    },
+    "42989013": {
+      "notices": [],
+      "priority_review": false,
+      "publication_types": [
+        "Journal Article"
+      ],
+      "title": "Effects of chronic care model-based intervention offered to elderly patients with diabetes on medication adherence, self-management, and activities of daily living: a randomized controlled trial.",
+      "topics": [
+        "medication"
+      ],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42989013/"
+    },
+    "42993078": {
+      "notices": [],
+      "priority_review": false,
+      "publication_types": [
+        "Journal Article"
+      ],
+      "title": "Medication Administration Errors by Caregivers of Children with Chronic Illness in Home Settings: A Systematic Review.",
+      "topics": [
+        "medication",
+        "access-and-distress",
+        "care-planning"
+      ],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42993078/"
+    },
+    "42999581": {
+      "notices": [],
+      "priority_review": false,
+      "publication_types": [
+        "Journal Article"
+      ],
+      "title": "Impact of different follow-up methods on prognosis of diabetic foot patients after endovascular treatment: a multicenter retrospective cohort study.",
+      "topics": [
+        "digital-self-management"
+      ],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42999581/"
+    },
+    "43003432": {
+      "notices": [],
+      "priority_review": false,
+      "publication_types": [
+        "Journal Article",
+        "Review"
+      ],
+      "title": "Advances in the hospital management of hyperglycemia and type 2 diabetes in non-critical care settings.",
+      "topics": [
+        "monitoring"
+      ],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/43003432/"
+    },
+    "43006686": {
+      "notices": [],
+      "priority_review": false,
+      "publication_types": [
+        "Journal Article",
+        "Systematic Review",
+        "Meta-Analysis"
+      ],
+      "title": "Machine Learning Models for Glycemic Prediction in Type 1 and Type 2 Diabetes: Systematic Review and Meta-Analysis.",
+      "topics": [
+        "monitoring"
+      ],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/43006686/"
+    },
+    "43010189": {
+      "notices": [],
+      "priority_review": false,
+      "publication_types": [
+        "Journal Article",
+        "Review"
+      ],
+      "title": "The transition from childhood to adulthood in diabetes care: A qualitative evidence synthesis.",
+      "topics": [
+        "care-planning"
+      ],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/43010189/"
+    },
+    "43014421": {
+      "notices": [],
+      "priority_review": false,
+      "publication_types": [
+        "Journal Article"
+      ],
+      "title": "Improved glycemic control and lifestyle behaviors with Dexcom continuous glucose monitoring: one-year real-world outcomes from a global registry of people with non-insulin-treated type 2 diabetes in primary care.",
+      "topics": [
+        "monitoring",
+        "access-and-distress"
+      ],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/43014421/"
+    },
+    "43016587": {
+      "notices": [],
+      "priority_review": false,
+      "publication_types": [
+        "Journal Article",
+        "Systematic Review"
+      ],
+      "title": "Effects of different metabolic equivalent of task on glycaemic control in children and adolescents with type 1 diabetes mellitus: a systematic review and meta-analysis.",
+      "topics": [
+        "reporting"
+      ],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/43016587/"
+    },
+    "43016670": {
+      "notices": [],
+      "priority_review": false,
+      "publication_types": [
+        "Journal Article",
+        "Scoping Review"
+      ],
+      "title": "Continuous glucose monitoring for diabetes prevention in adults with prediabetes: a scoping review.",
+      "topics": [
+        "reporting"
+      ],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/43016670/"
+    },
+    "43016744": {
+      "notices": [],
+      "priority_review": false,
+      "publication_types": [
+        "Journal Article",
+        "Systematic Review"
+      ],
+      "title": "Effect of social media-based diabetes self-management education and support on glycemic control in adults with type 2 diabetes: a systematic review and meta-analysis.",
+      "topics": [
+        "care-planning"
+      ],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/43016744/"
+    },
+    "43016895": {
+      "notices": [],
+      "priority_review": false,
+      "publication_types": [
+        "Journal Article",
+        "Systematic Review"
+      ],
+      "title": "Digital phenotyping for mental health monitoring and personalized prediction in people with diabetes: a Python-based scoping review.",
+      "topics": [
+        "digital-self-management"
+      ],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/43016895/"
+    },
+    "43020281": {
+      "notices": [],
+      "priority_review": false,
+      "publication_types": [
+        "Journal Article"
+      ],
+      "title": "Menstrual phase variations in glycemic control and insulin requirements in females with type 1 diabetes: A systematic review and meta-analysis.",
+      "topics": [
+        "monitoring",
+        "reporting"
+      ],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/43020281/"
+    },
+    "43022412": {
+      "notices": [],
+      "priority_review": false,
+      "publication_types": [
+        "Journal Article"
+      ],
+      "title": "Sequence of aerobic and resistance exercise influences short- and long-term glycemic control in type 2 diabetes: A randomized trial.",
+      "topics": [
+        "monitoring"
+      ],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/43022412/"
+    },
+    "43025972": {
+      "notices": [],
+      "priority_review": false,
+      "publication_types": [
+        "Journal Article"
+      ],
+      "title": "Optimizing Frontline Targeted Therapies in Chronic Lymphocytic Leukemia: An Italian Inter-Regional Delphi Consensus on Patient Risk Stratification, Cardiovascular Safety, and Endpoint Interpretation.",
+      "topics": [
+        "care-planning"
+      ],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/43025972/"
+    },
+    "43028636": {
+      "notices": [],
+      "priority_review": false,
+      "publication_types": [
+        "Journal Article",
+        "Review"
+      ],
+      "title": "Teach-Back-Based Interventions for Parents and Caregivers in Pediatric Healthcare: A Systematic Review of Randomized Controlled Trials.",
+      "topics": [
+        "access-and-distress",
+        "care-planning"
+      ],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/43028636/"
+    },
+    "43041697": {
+      "notices": [],
+      "priority_review": false,
+      "publication_types": [
+        "Journal Article",
+        "Review"
+      ],
+      "title": "Continuous glucose monitoring, automated insulin delivery, and remote care in adolescents with type 1 diabetes: advances toward integrated digital management.",
+      "topics": [
+        "monitoring",
+        "reporting"
+      ],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/43041697/"
+    },
+    "43044109": {
+      "notices": [],
+      "priority_review": false,
+      "publication_types": [
+        "Journal Article",
+        "Randomized Controlled Trial"
+      ],
+      "title": "Associations Between Technology Attitudes, App Use, and Health Outcomes in a Diabetes Self-Management Education and Support Intervention: Secondary Analysis of a Randomized Controlled Trial.",
+      "topics": [
+        "digital-self-management",
+        "care-planning"
+      ],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/43044109/"
+    },
+    "43047296": {
+      "notices": [],
+      "priority_review": false,
+      "publication_types": [
+        "Journal Article",
+        "Systematic Review"
+      ],
+      "title": "Continuous glucose monitoring in prediabetes: a bibliometric analysis of research trends, thematic mapping, and evidence gaps.",
+      "topics": [
+        "monitoring",
+        "digital-self-management"
+      ],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/43047296/"
+    },
+    "43050680": {
+      "notices": [],
+      "priority_review": false,
+      "publication_types": [
+        "Journal Article",
+        "Randomized Controlled Trial"
+      ],
+      "title": "A Mobile Diabetes Prevention Intervention Among Chinese Americans at Risk for Diabetes: Qualitative Analysis of Barriers and Facilitators to Intervention Engagement.",
+      "topics": [
+        "digital-self-management"
+      ],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/43050680/"
+    },
+    "43051588": {
+      "notices": [],
+      "priority_review": false,
+      "publication_types": [
+        "Journal Article",
+        "Review"
+      ],
+      "title": "Artificial Intelligence in Precision Nutrition: From Multi-Omics Integration to Personalized Dietary Interventions.",
+      "topics": [
+        "monitoring",
+        "digital-self-management"
+      ],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/43051588/"
+    },
+    "43062372": {
+      "notices": [],
+      "priority_review": false,
+      "publication_types": [
+        "Journal Article"
+      ],
+      "title": "The Effect of a Diabetes-Educated Psychologist on HbA1c and Diabetes Distress in Adults With Type 1 Diabetes: A Multicenter, Open-Label, Randomized Controlled Trial.",
+      "topics": [
+        "access-and-distress"
+      ],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/43062372/"
+    },
+    "43064604": {
+      "notices": [],
+      "priority_review": false,
+      "publication_types": [
+        "Journal Article",
+        "Practice Guideline"
+      ],
+      "title": "Consensus document SED-SEEN-SEMERGEN-SEMFyC-SEMG on the use of continuous glucose monitoring in people with type 2 diabetes mellitus on basal insulin therapy.",
+      "topics": [
+        "monitoring",
+        "reporting"
+      ],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/43064604/"
+    }
+  },
+  "searched_on": "2026-11-21",
+  "searches": {
+    "access-and-distress": {
+      "matches": 542,
+      "query": "(\"diabetes mellitus\"[mh] OR diabet*[tiab]) AND (\"diabetes distress\"[tiab] OR \"health literacy\"[tiab] OR \"food insecurity\"[tiab] OR \"insulin affordability\"[tiab] OR \"health equity\"[tiab]) AND (\"2022/01/01\"[dp] : \"2026/11/21\"[dp]) AND (systematic[sb] OR randomized controlled trial[pt] OR guideline[pt] OR systematic review[tiab] OR meta-analysis[tiab] OR randomized[tiab] OR \"retracted publication\"[pt] OR \"retraction of publication\"[pt] OR \"published erratum\"[pt] OR \"expression of concern\"[pt])",
+      "retrieved": 25,
+      "truncated": true
+    },
+    "care-planning": {
+      "matches": 333,
+      "query": "(\"diabetes mellitus\"[mh] OR diabet*[tiab]) AND (caregiver*[tiab] OR \"sick day\"[tiab] OR \"diabetes self-management education\"[tiab]) AND (\"2022/01/01\"[dp] : \"2026/11/21\"[dp]) AND (systematic[sb] OR randomized controlled trial[pt] OR guideline[pt] OR systematic review[tiab] OR meta-analysis[tiab] OR randomized[tiab] OR \"retracted publication\"[pt] OR \"retraction of publication\"[pt] OR \"published erratum\"[pt] OR \"expression of concern\"[pt])",
+      "retrieved": 25,
+      "truncated": true
+    },
+    "digital-self-management": {
+      "matches": 702,
+      "query": "(\"diabetes mellitus\"[mh] OR diabet*[tiab]) AND (app[tiab] OR \"mobile health\"[tiab] OR \"digital health\"[tiab]) AND (\"2022/01/01\"[dp] : \"2026/11/21\"[dp]) AND (systematic[sb] OR randomized controlled trial[pt] OR guideline[pt] OR systematic review[tiab] OR meta-analysis[tiab] OR randomized[tiab] OR \"retracted publication\"[pt] OR \"retraction of publication\"[pt] OR \"published erratum\"[pt] OR \"expression of concern\"[pt])",
+      "retrieved": 25,
+      "truncated": true
+    },
+    "medication": {
+      "matches": 392,
+      "query": "(\"diabetes mellitus\"[mh] OR diabet*[tiab]) AND (\"medication adherence\"[tiab] OR \"medication errors\"[tiab] OR \"insulin administration\"[tiab]) AND (\"2022/01/01\"[dp] : \"2026/11/21\"[dp]) AND (systematic[sb] OR randomized controlled trial[pt] OR guideline[pt] OR systematic review[tiab] OR meta-analysis[tiab] OR randomized[tiab] OR \"retracted publication\"[pt] OR \"retraction of publication\"[pt] OR \"published erratum\"[pt] OR \"expression of concern\"[pt])",
+      "retrieved": 25,
+      "truncated": true
+    },
+    "monitoring": {
+      "matches": 990,
+      "query": "(\"diabetes mellitus\"[mh] OR diabet*[tiab]) AND (\"continuous glucose monitoring\"[tiab] OR \"self monitoring of blood glucose\"[tiab]) AND (\"2022/01/01\"[dp] : \"2026/11/21\"[dp]) AND (systematic[sb] OR randomized controlled trial[pt] OR guideline[pt] OR systematic review[tiab] OR meta-analysis[tiab] OR randomized[tiab] OR \"retracted publication\"[pt] OR \"retraction of publication\"[pt] OR \"published erratum\"[pt] OR \"expression of concern\"[pt])",
+      "retrieved": 25,
+      "truncated": true
+    },
+    "reporting": {
+      "matches": 595,
+      "query": "(\"diabetes mellitus\"[mh] OR diabet*[tiab]) AND (\"ambulatory glucose profile\"[tiab] OR \"glucose management indicator\"[tiab] OR \"time in range\"[tiab] OR \"hemoglobin a1c discordance\"[tiab]) AND (\"2022/01/01\"[dp] : \"2026/11/21\"[dp]) AND (systematic[sb] OR randomized controlled trial[pt] OR guideline[pt] OR systematic review[tiab] OR meta-analysis[tiab] OR randomized[tiab] OR \"retracted publication\"[pt] OR \"retraction of publication\"[pt] OR \"published erratum\"[pt] OR \"expression of concern\"[pt])",
+      "retrieved": 25,
+      "truncated": true
+    }
+  }
+}

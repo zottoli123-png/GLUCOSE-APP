@@ -1,0 +1,227 @@
+[
+  {
+    "id": "cgm-coverage",
+    "title": "How much sensor data is available?",
+    "population": "Nonpregnant people with type 1 or type 2 diabetes using CGM",
+    "evidence": "ADA 2026 clinical standards",
+    "finding": "The ADA lists 14 days of CGM wear and 70% active data over that window as a benchmark for pattern assessment.",
+    "limitations": "This is a benchmark for interpreting patterns. Missing time and periods with selective use can affect interpretation.",
+    "design_implication": "Show observed coverage and date window alongside any CGM summary. Keep sparse periods visible.",
+    "kind": "education",
+    "sources": [
+      {
+        "url": "https://diabetesjournals.org/care/article/49/Supplement_1/S132/163927/6-Glycemic-Goals-Hypoglycemia-and-Hyperglycemic"
+      }
+    ]
+  },
+  {
+    "id": "meter-sampling",
+    "title": "What do my meter checks cover?",
+    "population": "People using a finger-stick meter",
+    "evidence": "ADA 2026 technology guideline and product inference",
+    "finding": "Finger-stick checks are individual observations. Their timing can depend on meals, activity, symptoms and other circumstances.",
+    "limitations": "A set of checks samples specific moments. It does not measure how long glucose was in range between the checks.",
+    "design_implication": "Show fraction of checks in range, sample counts and times. Reserve time in range for supported sensor data.",
+    "kind": "education",
+    "sources": [
+      {
+        "url": "https://diabetesjournals.org/care/article/49/Supplement_1/S150/163922"
+      }
+    ]
+  },
+  {
+    "id": "a1c-and-glucose",
+    "title": "Why lab A1C and glucose summaries can differ",
+    "population": "People comparing A1C and glucose records",
+    "evidence": "ADA 2026 diagnosis standards",
+    "finding": "Some conditions, including those that affect red blood cell turnover, can alter the relationship between A1C and glucose.",
+    "limitations": "The app cannot identify the reason for a difference from these records alone.",
+    "design_implication": "Keep lab A1C distinct from a CGM-derived indicator. Show data source and observation dates.",
+    "kind": "education",
+    "sources": [
+      {
+        "url": "https://diabetesjournals.org/care/article/49/Supplement_1/S27/163926/2-Diagnosis-and-Classification-of-Diab"
+      }
+    ]
+  },
+  {
+    "id": "individual-goals",
+    "title": "Glucose goals can change with health circumstances",
+    "population": "Older adults with diabetes",
+    "evidence": "ADA 2026 older-adult standards",
+    "finding": "The ADA recommends individualizing goals for older adults and prioritizing avoidance of hypoglycemia.",
+    "limitations": "Individual circumstances matter. An app cannot infer a person's appropriate goal from age or readings alone.",
+    "design_implication": "Store user-entered care-team targets with effective dates and preserve the settings used for a past report.",
+    "kind": "education",
+    "sources": [
+      {
+        "url": "https://diabetesjournals.org/care/article/49/Supplement_1/S277/163928/13-Older-Adults-Standards-of-Care-in-Diabetes-2026"
+      }
+    ]
+  },
+  {
+    "id": "g7-health-delay",
+    "title": "Dexcom G7 data in Apple Health can arrive later",
+    "population": "U.S. Dexcom G7 and G7 15 Day users sharing through Apple Health",
+    "evidence": "Manufacturer documentation",
+    "finding": "Dexcom documents a three-hour delay for this route into Apple Health.",
+    "limitations": "Applies to this vendor and route. Other combinations may have different timing.",
+    "design_implication": "Show measured-at and received-at separately. Preserve device and route on each reading.",
+    "kind": "education",
+    "sources": [
+      {
+        "url": "https://www.dexcom.com/en-us/m/faqs/how-do-i-share-my-glucose-data-with-the-apple-health-app"
+      }
+    ]
+  },
+  {
+    "id": "phone-alerts",
+    "title": "Where device alerts come from",
+    "population": "People using smartphone-connected diabetes devices",
+    "evidence": "FDA safety communication",
+    "finding": "The FDA received reports of missed or inaudible safety alerts after phone hardware, software or settings changes.",
+    "limitations": "Safety reports establish a design concern and do not provide the frequency for a particular phone or app.",
+    "design_implication": "Keep diary reminders distinct from device alarms. Identify the device app responsible for its own alarms.",
+    "kind": "education",
+    "sources": [
+      {
+        "url": "https://www.fda.gov/medical-devices/safety-communications/fda-alerts-patients-regularly-check-diabetes-related-smartphone-device-alert-settings-especially"
+      }
+    ]
+  },
+  {
+    "id": "education-access",
+    "title": "Finding diabetes education and support",
+    "population": "People seeking diabetes education in the U.S.",
+    "evidence": "CDC implementation toolkit",
+    "finding": "Costs, referral gaps, and limited local services can affect participation in diabetes self-management education and support.",
+    "limitations": "Local services and eligibility vary.",
+    "design_implication": "Offer access resources without an account. Let users add a question or barrier to their visit notes.",
+    "kind": "education",
+    "sources": [
+      {
+        "url": "https://www.cdc.gov/diabetes-toolkit/php/patient-referral-process/overcoming-referral-barriers.html"
+      }
+    ]
+  },
+  {
+    "id": "affordability",
+    "title": "Help paying for diabetes care",
+    "population": "People looking for U.S. diabetes-care assistance",
+    "evidence": "NIDDK resource guide",
+    "finding": "NIDDK points to insurance and financial assistance resources for diabetes care.",
+    "limitations": "Eligibility and coverage depend on the program and location. Check current terms directly.",
+    "design_implication": "Put the resource next to refill tracking. Record verification dates and keep links optional.",
+    "kind": "education",
+    "sources": [
+      {
+        "url": "https://www.niddk.nih.gov/health-information/diabetes/financial-help-diabetes-care"
+      }
+    ]
+  },
+  {
+    "id": "school-plan",
+    "title": "Keep the school care plan handy",
+    "population": "Families of students with diabetes",
+    "evidence": "ADA school personnel guide",
+    "finding": "The school guide describes using an individualized Diabetes Medical Management Plan and planning for emergencies.",
+    "limitations": "The student's own care team's instructions and the school's processes govern the actual plan.",
+    "design_implication": "Keep a versioned copy available offline and let families explicitly choose what to share.",
+    "kind": "education",
+    "sources": [
+      {
+        "url": "https://diabetes.org/sites/default/files/2023-10/SchoolguidepdfMay2020_0.pdf"
+      }
+    ]
+  },
+  {
+    "id": "app-trials",
+    "title": "What diabetes app studies can tell us",
+    "population": "People enrolled in diabetes self-management app trials",
+    "evidence": "2024 systematic review and meta-analysis of randomized trials",
+    "finding": "The review identified associations between self-monitoring or medication-taking features and better glycemic outcomes across included trials.",
+    "limitations": "Interventions differed. Feature-level associations do not establish which feature caused an effect or how this tracker will perform.",
+    "design_implication": "Prioritize easy logging and medication history. Evaluate task errors and burden before claiming clinical benefit.",
+    "kind": "education",
+    "sources": [
+      {
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11002812/"
+      }
+    ]
+  },
+  {
+    "id": "mobile-trial",
+    "title": "Sensor trial in adults using basal insulin",
+    "population": "Adults with type 2 diabetes using basal insulin without prandial insulin in the MOBILE trial",
+    "evidence": "2021 randomized controlled trial",
+    "finding": "The trial reported greater A1C improvement with CGM than with a blood glucose meter in its study group.",
+    "limitations": "The intervention was CGM, and results may not generalize to other populations or a diary app.",
+    "design_implication": "Support sensor imports where verified while maintaining a complete meter workflow.",
+    "kind": "education",
+    "sources": [
+      {
+        "url": "https://pubmed.ncbi.nlm.nih.gov/34077499/"
+      }
+    ]
+  },
+  {
+    "id": "conceptt",
+    "title": "Sensor trial during pregnancy with type 1 diabetes",
+    "population": "Pregnant participants with type 1 diabetes on intensive insulin therapy in CONCEPTT",
+    "evidence": "2017 multicentre randomized trial",
+    "finding": "The pregnancy trial reported improved neonatal outcomes with CGM use alongside capillary glucose monitoring.",
+    "limitations": "The study population and intervention do not establish outcomes for gestational diabetes or for this app.",
+    "design_implication": "Support a separate pregnancy report layout with the person's saved clinician targets.",
+    "kind": "education",
+    "sources": [
+      {
+        "url": "https://pubmed.ncbi.nlm.nih.gov/28923465/"
+      }
+    ]
+  },
+  {
+    "id": "cgm-review",
+    "title": "Sensor studies across different diabetes populations",
+    "population": "People with type 1, type 2, or diabetes during pregnancy in the included trials",
+    "evidence": "2025 systematic review and meta-analysis of randomized trials",
+    "finding": "The review synthesizes CGM trial evidence across several diabetes populations.",
+    "limitations": "Compare population, device type, comparator and outcomes before applying a result to an app workflow.",
+    "design_implication": "Track populations separately in the research catalog and report design decisions against the relevant population.",
+    "kind": "education",
+    "sources": [
+      {
+        "url": "https://pubmed.ncbi.nlm.nih.gov/40049630/"
+      }
+    ]
+  },
+  {
+    "id": "dcct-history",
+    "title": "Long-term outcomes in type 1 diabetes",
+    "population": "Participants with type 1 diabetes in the DCCT",
+    "evidence": "Landmark randomized trial",
+    "finding": "The 1993 trial linked intensive treatment to lower risk of several microvascular complications, with more severe hypoglycemia.",
+    "limitations": "A historical treatment trial cannot establish the effect of this tracker or select a personal target.",
+    "design_implication": "Support multi-year history and dated lab results while retaining care-team ownership of treatment.",
+    "kind": "education",
+    "sources": [
+      {
+        "url": "https://pubmed.ncbi.nlm.nih.gov/8366922/"
+      }
+    ]
+  },
+  {
+    "id": "ukpds-history",
+    "title": "Long-term outcomes in type 2 diabetes",
+    "population": "Participants with newly diagnosed type 2 diabetes in UKPDS 33",
+    "evidence": "Landmark randomized trial",
+    "finding": "The 1998 trial reported reduced microvascular complications with intensive glucose control.",
+    "limitations": "The study tested specific management strategies in its era. Its outcomes do not establish the effect of an app.",
+    "design_implication": "Support multi-year history and dated lab results while retaining care-team ownership of treatment.",
+    "kind": "education",
+    "sources": [
+      {
+        "url": "https://pubmed.ncbi.nlm.nih.gov/9742976/"
+      }
+    ]
+  }
+]

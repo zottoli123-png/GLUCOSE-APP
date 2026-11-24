@@ -1,0 +1,47 @@
+{
+  "cgm-coverage": {
+    "status": "pending"
+  },
+  "meter-sampling": {
+    "status": "pending"
+  },
+  "a1c-and-glucose": {
+    "status": "pending"
+  },
+  "individual-goals": {
+    "status": "pending"
+  },
+  "g7-health-delay": {
+    "status": "pending"
+  },
+  "phone-alerts": {
+    "status": "pending"
+  },
+  "education-access": {
+    "status": "pending"
+  },
+  "affordability": {
+    "status": "pending"
+  },
+  "school-plan": {
+    "status": "pending"
+  },
+  "app-trials": {
+    "status": "pending"
+  },
+  "mobile-trial": {
+    "status": "pending"
+  },
+  "conceptt": {
+    "status": "pending"
+  },
+  "cgm-review": {
+    "status": "pending"
+  },
+  "dcct-history": {
+    "status": "pending"
+  },
+  "ukpds-history": {
+    "status": "pending"
+  }
+}

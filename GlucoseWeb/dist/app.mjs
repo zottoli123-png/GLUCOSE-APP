@@ -1,4 +1,4 @@
-import {readProfiles,writeProfile,createVault,unlock,seal} from "./vault.mjs";
+import {readProfiles,writeProfile,createVault,unlock,seal,setRememberedProfile,openRememberedProfile} from "./vault.mjs";
 import {kinds, dates, dose, units, factor, summary, blank, importGlucose, csv} from "./model.mjs";
 
 const main=document.querySelector("#main");
@@ -33,29 +33,69 @@ function run(action) {
         finally{busy=false;if(submit) submit.disabled=false;}
     };
 }
-function lock() {
+const signInEvents=typeof BroadcastChannel==="function"?new BroadcastChannel("glucose-journal-sign-in"):null;
+signInEvents?.addEventListener("message",({data})=>{
+    if(session?.envelope.id.toUpperCase()===data?.revoked) lock();
+});
+
+function clearView() {
     generation++;
     session=null;active="History";filter="";windowDays=30;plotKind="Glucose";
     report.types=[];report.name=false;report.questions=false;notice.textContent="";
+    nav.hidden=true;lockButton.hidden=true;main.replaceChildren();
+}
+function lock() {
+    clearView();
     gate().catch(error=>show(error.message));
 }
-lockButton.onclick=lock;
+async function revokeSavedSignIn(id) {
+    await setRememberedProfile(id,null);
+    signInEvents?.postMessage({revoked:id});
+}
+lockButton.onclick=async()=>{
+    const current=session;
+    if(!current) return;
+    clearView();
+    let issue;
+    try { await revokeSavedSignIn(current.envelope.id.toUpperCase()); }
+    catch { issue="Profile locked. Check your browser storage settings before relying on saved sign-in."; }
+    await gate();
+    if(issue) show(issue);
+};
 let hiddenAt=0, backgroundTimer;
 document.addEventListener("visibilitychange",()=>{
     clearTimeout(backgroundTimer);
     document.body.classList.toggle("concealed",document.hidden);
     if(document.hidden){
         hiddenAt=Date.now();
-        if(session) backgroundTimer=setTimeout(lock,60000);
+        if(session && !session.grant) backgroundTimer=setTimeout(lock,60000);
+    }else if(session?.grant) {
+        const current=session;
+        readProfiles(current.envelope.id.toUpperCase()).then(row=>{
+            if(session===current && row?.remembered?.grant!==current.grant) lock();
+        }).catch(()=>{if(session===current) lock();});
     }else if(session && hiddenAt && Date.now()-hiddenAt>=60000) lock();
 });
-window.addEventListener("pagehide",()=>{if(session) lock();});
-async function gate() {
+window.addEventListener("pagehide",clearView);
+window.addEventListener("pageshow",event=>{if(event.persisted) gate(true).catch(error=>show(error.message));});
+
+function openView(opened) {
+    session={...opened,journal:profileDefaults(opened.journal)};
+    render();
+}
+async function gate(autoOpen=false) {
     const attempt=generation;
     nav.hidden=true;lockButton.hidden=true;main.replaceChildren();
     if(!crypto.subtle){main.textContent="Open Glucose Journal over HTTPS or localhost to use encrypted storage.";return;}
     const profiles=await readProfiles();
     if(attempt!==generation || session) return;
+    if(autoOpen && !document.hidden && profiles.length===1 && profiles[0].remembered) {
+        try {
+            const opened=await openRememberedProfile(profiles[0].id);
+            if(attempt===generation && !document.hidden && !session) { openView(opened); return; }
+        }catch{ show("Enter your passphrase to open your profile."); }
+        if(attempt!==generation || session) return;
+    }
     main.innerHTML=`<section class="panel gate"><h1>Your health journal</h1><p class="hint">Record readings, organize medications, and prepare for visits. Your journal stays on this device.</p>
         <form id="gate" class="stack">
         <label>Profile<select name="profile">${profiles.map(p=>opt(p.id,"Profile "+p.id.slice(0,8),null)).join("")}${opt("new","Create a profile",profiles.length?"":"new")}${opt("restore","Restore an encrypted backup",null)}</select></label>
@@ -64,7 +104,10 @@ async function gate() {
         <label>Passphrase<input type="password" name="password" required maxlength="512"></label>
         <label id="confirmField">Confirm passphrase<input type="password" name="confirmation" maxlength="512"></label>
         <p id="passHint" class="hint">Use a unique passphrase of at least 14 characters. It also unlocks your backup.</p>
-        <button class="primary" id="openButton">Open profile</button></form></section>`;
+        <label class="check"><input type="checkbox" name="remember">Stay signed in on this device</label>
+        <p class="hint">Use only on a device you control. Anyone who can open this browser may be able to view a remembered profile.</p>
+        <button class="primary" id="openButton">Open profile</button>
+        <button type="button" id="continueRemembered" hidden>Continue with saved sign-in</button></form></section>`;
     const form=document.querySelector("#gate");
     const update=()=>{
         const mode=form.elements.profile.value;
@@ -72,12 +115,18 @@ async function gate() {
         document.querySelector("#fileField").hidden=mode!=="restore";
         document.querySelector("#confirmField").hidden=mode!=="new";
         document.querySelector("#passHint").hidden=mode!=="new";
+        document.querySelector("#continueRemembered").hidden=!profiles.some(profile=>profile.id===mode && profile.remembered);
         form.elements.name.required=mode==="new";
         form.elements.confirmation.required=mode==="new";
         form.elements.backup.required=mode==="restore";
         document.querySelector("#openButton").textContent=mode==="new"?"Create profile":mode==="restore"?"Restore backup":"Unlock profile";
     };
-    form.elements.profile.onchange=update;update();
+    form.elements.profile.onchange=()=>{form.elements.remember.checked=false;update();};
+    update();
+    document.querySelector("#continueRemembered").onclick=run(async()=>{
+        const opened=await openRememberedProfile(form.elements.profile.value);
+        if(attempt===generation && !document.hidden && !session) openView(opened);
+    });
     form.onsubmit=run(async()=>{
         const mode=form.elements.profile.value;
         const password=form.elements.password.value;
@@ -103,8 +152,15 @@ async function gate() {
             opened=await unlock(envelope,password);
         }
         if(generation!==attempt || document.hidden) return;
-        session={...opened,envelope,revision,journal:profileDefaults(opened.journal)};
-        render();
+        let grant, issue;
+        try {
+            if(form.elements.remember.checked) grant=await setRememberedProfile(envelope.id.toUpperCase(),opened.key);
+            else if(profiles.some(profile=>profile.id===mode && profile.remembered))
+                await revokeSavedSignIn(envelope.id.toUpperCase());
+        }catch{ issue="Profile opened. This browser could not update the saved sign-in."; }
+        if(generation!==attempt || document.hidden) return;
+        openView({...opened,envelope,revision,grant});
+        if(issue) show(issue);
     });
 }
 async function save(next) {
@@ -330,7 +386,9 @@ function insights(){
 function settings(){
     const j=session.journal;
     main.innerHTML=pageTitle("Settings")+`<div class="layout">
-    <section class="panel stack"><h2>Profile preferences</h2><form id="profileSettings" class="stack">
+    <section class="panel stack"><h2>Profile preferences</h2>
+    <p class="hint">${session.grant?"This profile is set to stay signed in on this device. Lock profile turns it off.":"To stay signed in, switch profiles and check the box when entering your passphrase."}</p>
+    <button type="button" id="switchProfile">Switch profile</button><form id="profileSettings" class="stack">
     <label>Display name<input name="name" maxlength="80" required value="${html(j.name)}"></label>
     <label>Glucose unit<select name="unit">${opt("mg","mg/dL",j.useMMOL?"mmol":"mg")}${opt("mmol","mmol/L",j.useMMOL?"mmol":"mg")}</select></label>
     <details><summary>Care-team glucose range</summary><p class="hint">Optional. Enter the range your care team gave you in mg/dL.</p>
@@ -358,6 +416,7 @@ function settings(){
     <small>Columns must be measured_at, glucose, unit, source. Use an ISO date with a time zone.</small>
     <button>Review import</button></form>
     <button class="danger" id="erase">Delete this profile</button></section></div>`;
+    document.querySelector("#switchProfile").onclick=lock;
     document.querySelector("#profileSettings").onsubmit=run(async e=>{
         const fields=new FormData(e.currentTarget);const name=String(fields.get("name")).trim();
         if(!name) throw Error("Enter a profile name.");
@@ -411,7 +470,7 @@ function settings(){
     document.querySelector("#backup").onclick=()=>download("GlucoseJournal-Encrypted.json",JSON.stringify(session.envelope),"application/json");
     document.querySelector("#erase").onclick=run(async()=>{
         if(!confirm("Delete this profile and all its entries from this browser?")) return;
-        const current=session;await writeProfile(current.envelope,current.revision,true);lock();show("Profile deleted");
+        const current=session;await writeProfile(current.envelope,current.revision,true);signInEvents?.postMessage({revoked:current.envelope.id.toUpperCase()});lock();show("Profile deleted");
     });
     document.querySelector("#import").onsubmit=run(async e=>{
         const file=e.currentTarget.elements.csv.files[0];
@@ -426,4 +485,4 @@ fetch("./evidence.bundle.json",{credentials:"same-origin"}).then(r=>r.json()).th
     if(bundle.schema===1&&Array.isArray(bundle.cards)){evidence=bundle;if(session&&active==="Insights") render();}
 }).catch(()=>{});
 if("serviceWorker" in navigator) navigator.serviceWorker.register("./sw.js").catch(()=>{show("Offline installation is unavailable in this browser.");});
-gate().catch(error=>show(error.message));
+gate(true).catch(error=>show(error.message));

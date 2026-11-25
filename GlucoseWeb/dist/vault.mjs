@@ -33,6 +33,10 @@ export async function seal(envelope, key, journal) {
 }
 export async function unlock(envelope, passphrase) {
     const key = await keyFor(envelope,passphrase);
+    return {key,journal:await decryptJournal(envelope,key)};
+}
+
+export async function decryptJournal(envelope,key) {
     let journal;
     try {
         const bytes = decode(envelope.sealed);
@@ -40,7 +44,7 @@ export async function unlock(envelope, passphrase) {
         journal = JSON.parse(new TextDecoder().decode(data));
     } catch { throw Error("The passphrase or encrypted backup could not be verified."); }
     if (journal.schema !== 1 || !Array.isArray(journal.entries)) throw Error("This backup requires a compatible app version.");
-    return {key,journal};
+    return journal;
 }
 export async function createVault(passphrase,journal) {
     if (passphrase.length < 14) throw Error("Use a unique passphrase with at least 14 characters.");
@@ -83,9 +87,43 @@ export async function writeProfile(envelope, revision, remove = false) {
                 return;
             }
             if (remove) store.delete(id);
-            else store.put({id,envelope,revision:(revision ?? 0)+1});
+            else store.put({...request.result,id,envelope,revision:(revision ?? 0)+1});
         };
         tx.oncomplete = () => resolve((revision ?? 0)+1);
         tx.onabort = () => reject(error || tx.error || Error("Could not save the profile."));
     });
+}
+
+export async function setRememberedProfile(id, key) {
+    const conn = await db();
+    return new Promise((resolve,reject) => {
+        const tx = conn.transaction("profiles","readwrite");
+        const store = tx.objectStore("profiles");
+        const request = store.get(id);
+        let grant;
+        request.onsuccess = () => {
+            const profile = request.result;
+            if (!profile) { tx.abort(); return; }
+            delete profile.remembered;
+            if (key) {
+                grant = crypto.randomUUID();
+                profile.remembered = {grant,key};
+            }
+            try { store.put(profile); }
+            catch { tx.abort(); }
+        };
+        tx.oncomplete = () => resolve(grant);
+        tx.onabort = () => reject(tx.error || Error("This browser could not update the saved sign-in."));
+    });
+}
+
+export async function openRememberedProfile(id) {
+    const row = await readProfiles(id);
+    if (!row?.remembered) throw Error("This profile needs its passphrase.");
+    const {key,grant} = row.remembered;
+    const journal = await decryptJournal(row.envelope,key);
+    const current = await readProfiles(id);
+    if (current?.remembered?.grant !== grant || current.revision !== row.revision)
+        throw Error("This profile changed in another tab. Try opening it again.");
+    return {key,grant,journal,envelope:row.envelope,revision:row.revision};
 }
